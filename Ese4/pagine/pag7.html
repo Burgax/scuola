@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Burgarello Gabriele's Site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/styleese4.css">
+  <link rel="stylesheet" href="../../css/stylemenu.css">
+  <script src="https://kit.fontawesome.com/d7f23fc3b3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="../../images/logo.png" alt="" height="50" width="130">
+    </div>
+    <ul class="menu">
+      <li><a href="../../index.html"><i class="fas fa-home"></i> Home Redirect </a></li>
+      <li><a href="pag1.html"><i class="far fa-clipboard"></i> Ese1 </a></li>
+      <li><a href="pag2.html"><i class="far fa-clipboard"></i> Ese2 </a></li>
+      <li><a href="pag3.html"><i class="far fa-clipboard"></i> Ese3 </a></li>
+      <li><a href="pag4.html"><i class="far fa-clipboard"></i> Ese4 </a></li>
+      <li><a href="pag5.html"><i class="far fa-clipboard"></i> Ese5 </a></li>
+      <li><a href="pag6.html"><i class="far fa-clipboard"></i> Ese6 </a></li>
+      <li><a href="pag7.html"><i class="far fa-clipboard"></i> Ese7 </a></li>
+      <li><a href="pag8.html"><i class="far fa-clipboard"></i> Ese8 </a></li>
+    </ul>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+  <div class="titoli mt-1">
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <h3>Lorem ipsum dolor sit amet</h3>
+    <h4>Lorem ipsum dolor sit amet</h4>
+    <h5>Lorem ipsum dolor sit amet</h5>
+    <h6>Lorem ipsum dolor sit amet</h6>
+  </div>
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+    ScrollReveal().reveal('.reveal',  { distance: '100px', duration: 3000, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600 });
+  </script>
+  <script>
+    $( document ).ready(function() {
+
+      /* Open Panel */
+      $( ".hamburger" ).on('click', function() {
+        $(".menu").toggleClass("menu--open");
+      });
+      /* Open Panel */
+      $( ".hamburger" ).on('click', function() {
+        $(".cta").toggleClass("cta--open");
+      });
+
+    });
+  </script>
+</body>
+</html>

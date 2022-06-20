@@ -1,0 +1,98 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Burgarello Gabriele's Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../css/card.css">
+    <link rel="stylesheet" href="../../css/5-r6.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/led-display7" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7f23fc3b3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <video autoplay muted loop id="video-logo" height="50" width="130">
+          <source src="../../images/logo2.mp4" type="video/mp4">
+      </div>
+      <ul class="menu">
+        <li><a href="../HomeSito.html"><i class="fas fa-home"></i> Home </a></li>
+        <li><a href="../../index.html" accesskey="i"><i class="fas fa-house-user"></i> Home Redirect </a></li>
+      </ul>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+      <div class="prod-card mt-4">
+        <div class="content">
+          <div class="content__img">
+            <img src="../../images/imgsito/img5r6.jpg" alt="">
+          </div>
+        <div class="content__info">
+          <h2 class="med-text">RainbowSix Siege</h2>
+          <div class="tags">
+          <a href="#" class="tag mt-1">#azione</a>
+          <a href="#" class="tag mt-1">#fps</a>
+          <a href="#" class="tag mt-1">#cooperazione</a>
+          <a href="#" class="tag mt-1">#shooter</a>
+          <a href="#" class="tag mt-1">#stealth</a>
+          <a href="#" class="tag mt-1">#multiplayer</a>
+          </div>
+          <div class="price mt-2">
+            <div class="price__text">
+               <h3 class="normal-text">Prezzo: </h3>
+            </div>
+            <div class="price__pos">
+               <span class="med-text" id="price__num">7.89€</span>
+            </div>
+          </div>
+          <h3 class="normal-text mt-1 mb">Piattaforma: </h3>
+          <div class="choose mt-0">
+            <label>
+              <input type="radio" name="piattaforma" value="" checked>
+              <i class="fab fa-playstation"></i>
+            </label>
+            <label>
+              <input type="radio" name="piattaforma" value="">
+              <i class="fab fa-xbox"></i>
+            </label>
+            <label>
+              <input type="radio" name="piattaforma" value="">
+              <i class="fab fa-steam"></i>
+            </label>
+          </div>
+        </div>
+      </div>
+          <div class="trailer med-text mt-2 mb">
+            <h3 class="mobile">Trailer: </h3>
+            <div id="video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/weqnfymIU2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="rate">
+            <h3 class=" normal-text mt-1 mb mobile">Rate: </h3>
+            <span class="mt-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>  3/5</span>
+          </div>
+          <div class="shop ">
+            <a href="../payment-area/payment-card.html" class="btn">Acquista ora <i class="fas fa-shopping-cart"></i></a>
+          </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script>
+    $( document ).ready(function() {
+
+      /* Open Panel */
+      $( ".hamburger" ).on('click', function() {
+        $(".menu").toggleClass("menu--open");
+      });
+
+    });
+  </script>
+  </body>
+</html>

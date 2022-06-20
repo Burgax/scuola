@@ -1,0 +1,142 @@
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Burgarello Gabriele's Site</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="../css/stylesito.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/xerography" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d7f23fc3b3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <video autoplay muted loop id="video-logo" height="50" width="130">
+        <source src="../images/logo2.mp4" type="video/mp4">
+    </div>
+    <ul class="menu">
+      <li><a href="HomeSito.html"><i class="fas fa-home"></i> Home </a></li>
+      <li><a href="../index.html" accesskey="i"><i class="fas fa-house-user"></i> Home Redirect </a></li>
+    </ul>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+  <div class="title mt-3">
+    <h1 class="big-text mt-1 tw">WASD la casa del gamer</h1>
+  </div>
+    <div class="block glow mt-2">
+      <ul>
+        <li>
+          <div class="container">
+          <div class="box">
+            <span></span>
+            <div class="box__content">
+              <h2 class="intro-text mb mt-0">The Last of Us</h2>
+              <div class="content__img">
+                <img src="../images/imgsito/img1tlou2.jpg" alt="">
+                <p class="normal-text tw">74.98€</p>
+              </div>
+              <a href="pag/Card_1_tlou.html" class="btn">Acquista ora</a>
+            </div>
+          </div>
+        </div>
+      </li>
+        <li>
+          <div class="container">
+            <div class="box">
+              <span></span>
+              <div class="box__content">
+                <h2 class="intro-text mb mt-0">AC Valhalla</h2>
+                <div class="content__img">
+                  <img src="../images/imgsito/img2acv.jpg" alt="">
+                  <p class="normal-text tw">36.40€</p>
+                </div>
+                <a href="pag/Card_2_acv.html" class="btn">Acquista ora</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+            <div class="box">
+              <span></span>
+              <div class="box__content">
+                <h2 class="intro-text mb mt-0">Minecraft</h2>
+                <div class="content__img">
+                  <img src="../images/imgsito/img3mc.jpg" alt="">
+                  <p class="normal-text tw">18.89€</p>
+                </div>
+                <a href="pag/Card_3_mc.html" class="btn">Acquista ora</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+            <div class="box">
+              <span></span>
+              <div class="box__content">
+                <h2 class="intro-text mb mt-0">gta v</h2>
+                <div class="content__img">
+                  <img src="../images/imgsito/img4gta.jpg" alt="">
+                  <p class="normal-text tw">9.89€</p>
+                </div>
+                <a href="pag/Card_4_gtav.html" class="btn">Acquista ora</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+            <div class="box">
+              <span></span>
+              <div class="box__content">
+                <h2 class="intro-text mb mt-0">Rainbow six</h2>
+                <div class="content__img">
+                  <img src="../images/imgsito/img5r6.jpg" alt="">
+                  <p class="normal-text tw">7.89€</p>
+                </div>
+                <a href="pag/Card_5_r6.html" class="btn">Acquista ora</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+            <div class="box">
+              <span></span>
+              <div class="box__content">
+                <h2 class="intro-text mb mt-0">Resident Evil 3</h2>
+                <div class="content__img">
+                  <img src="../images/imgsito/img6re3.jpg" alt="">
+                  <p class="normal-text tw">13.89€</p>
+                </div>
+                <a href="pag/Card_6_re.html" class="btn">Acquista ora</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script>
+    $( document ).ready(function() {
+
+      /* Open Panel */
+      $( ".hamburger" ).on('click', function() {
+        $(".menu").toggleClass("menu--open");
+      });
+
+    });
+  </script>
+  </body>
+  </html>

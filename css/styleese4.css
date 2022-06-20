@@ -1,0 +1,250 @@
+/* ! Base Style */
+
+body{font-family: 'Inter', sans-serif; font-size: 16px;}
+
+a{text-decoration: none; z-index: 3;}
+
+h1, h2, h3, h4, h5, h6, p{color:#000; padding-bottom: 30px;}
+p{line-height: 28px; color:#666;}
+
+.big-text{font-size: 70px;font-weight: 900;}
+.med-text{font-size: 40px;}
+
+@media (max-width: 768px) {
+  .big-text{font-size: 40px;}
+  .button{width: 60%; text-align: center;}
+}
+
+ /* ESE 1 */
+ .scritta{
+   margin-top: 200px;
+   text-align: center;
+
+ }
+.dispari{
+  text-align: center;
+  font-size: 70px;
+}
+.pari{
+  text-align: center;
+  font-size: 140px;
+}
+
+/* ! ESE 2 */
+.container {
+    position: relative;
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 5%;
+    margin: auto;
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+}
+.container .links a {
+    display: block;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+}
+.container .links a:hover{
+  transition: 0.4s;
+  border-left:5px solid lightgray;
+  border-right:5px solid lightgray;
+  box-shadow: 0 0 10px rgba(#414b4b, 0.65), 0 0 40px rgba(#414b4b, 0.65), 0 0 80px rgba(#414b4b, 0.65);
+  padding:20px;
+  font-size: 80px;
+  background-color: rgba(251, 232, 156, 0.36);
+}
+
+/* ! ESE 3 */
+.capelli{
+  height: 150px;
+  width: 100px;
+  margin: auto;
+  background-color: rgb(43, 20, 20);
+}
+.faccia{
+  height: 600px;
+  width: 600px;
+  background-color: pink;
+  margin: auto;
+  border-radius: 20px;
+}
+.occhi{
+display: flex;
+height: 100px;
+width: 100%;
+transform: translateY(75px);
+}
+.occhio{
+height: 100px;
+width: 150px;
+margin-left: 100px;
+background-color: #fff;
+border-radius: 100%;
+}
+.pupilla{
+height: 50px;
+width: 50px;
+background-color: #000;
+border-radius: 100%;
+margin: auto;
+margin-top: 25px;
+}
+.naso{
+height: 125px;
+width: 50px;
+background-color: #994f4f;
+border-radius: 20px;
+margin: auto;
+margin-top: 100px;
+}
+.bocca{
+height: 50px;
+width: 300px;
+background-color: #f21d1d;
+border-radius: 20px;
+margin: auto;
+margin-top: 100px;
+}
+/* ! ESE 4 */
+.wrapper{
+  height: 100vh;
+  width: 100%;
+  padding: 300px;
+  padding-left: 650px;
+}
+.blu{
+  width: 300px;
+  height: 300px;
+  border: 25px solid blue;
+  border-radius: 50%;
+}
+.giallo{
+  width: 300px;
+  height: 300px;
+  border: 25px solid yellow;
+  border-radius: 50%;
+  top:20%;
+  left:30%;
+  transform:translate(50%, -50%);
+}
+.nero{
+  width: 300px;
+  height: 300px;
+  border: 25px solid black;
+  border-radius: 50%;
+  top:20%;
+  left:30%;
+  transform:translate(102%, -200%);
+}
+.verde{
+  width: 300px;
+  height: 300px;
+  border: 25px solid green;
+  border-radius: 50%;
+  top:20%;
+  left:30%;
+  transform:translate(152%, -250%);
+}
+.rosso{
+  width: 300px;
+  height: 300px;
+  border: 25px solid red;
+  border-radius: 50%;
+  top:20%;
+  left:30%;
+  transform:translate(204%, -400%);
+}
+/* ! ESE 5 */
+.b{
+font-weight: bold;
+}
+.big{
+font-size: 24px;
+}
+/* ! ESE 6 */
+.elenchi{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.elenco1{
+  border: 4px solid green;
+  margin: auto;
+}
+.elenco1b{
+  border: 4px solid green;
+  margin: 10px;
+  padding: 10px;
+}
+.pari1{
+  list-style-type: circle;
+  list-style-position: inside;
+  }
+.elenco2{
+  margin: auto;
+}
+
+/* ! ESE 7 */
+.titoli{
+  height: 100vh;
+  width: 100%;
+}
+.titoli h1, .titoli h2, .titoli h3, .titoli h4, .titoli h5, .titoli h6{
+  text-indent: 3em;
+}
+/* ! ESE 8 */
+
+.cap{
+    text-transform: capitalize;
+}
+.paragrafi{
+  width: 60%;
+  text-indent: 38px; /* 1 cm */
+}
+.init{
+  font-size: 40px;
+  color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Helpers */
+.mt-1{
+  margin-top: 150px;
+}
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+}

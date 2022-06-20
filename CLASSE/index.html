@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>classe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="d1" >
+
+      <form class="contact"  method="post" >
+          <label>QUANTI ALUNNI CI SONO NELLA CLASSE?</label>
+          <input class="texti " id="nAlunni" type="text" name="" value="" required>
+          <input type="button" name="" value="Invia!" onclick="NewAl()">
+      </form>
+    </div>
+    <div id="test"></div>
+    <script>
+    today = new Date()
+    document.write("La data di oggi: ", today.getDate(),"/",today.getMonth()+1,"/",(today.getFullYear()))
+
+
+    function onKey() {
+      var d = document.getElementById("data").value
+      var y = today.getFullYear();
+      var r = y - d;
+      document.getElementById("outdata").innerHTML = r
+      //document.getElementsByClassName("outdata").innerHTML = r
+    }
+
+    var btn = document.getElementById("btn");
+
+    function NewAl(){
+
+      var test = document.getElementById("test");
+      var testo = "";
+      var nAlunni = document.getElementById("nAlunni").value
+      var array = [i]
+
+    for (var i = 0; i < nAlunni ; i++) {
+      testo += "<div class=\" Alunno \" id=\"al\"> <form  class=\"contact\"  method=\"post\"> <label > Cognome :</label> <input class=\"texti\" id=\"cognome\"  type=\"text\" name=\"\" value=\"\"> <label > Nome :</label><br> <input class=\"texti\" id=\"nome\" type=\"text\" name=\"\" value=\"\"> <label>Anno di nascita:</label> <input type=\"text\" class=\"texti\" name=\"mydatetime\" id=\"data\" placeholder=\"0000\" maxlength=\"4\" /> <input type=\"button\" value=\"calcola\"  id=\"btn\" OnClick=\"onKey()\" > </form> <p>La tue età è:</p> <p id=\"outdata\"></p> </div>";
+
+
+    }
+    test.innerHTML = testo;
+    }
+
+     </script>
+  </body>
+</html>
